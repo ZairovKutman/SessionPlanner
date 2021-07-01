@@ -1,0 +1,11 @@
+ package kg.zairov.planner.service;
+
+ import kg.zairov.planner.entity.Session;
+
+ import java.time.LocalDateTime;
+
+ public interface SessionService {
+    String NAME = "planner_SessionService";
+
+    Session rescheduleSession(Session session, LocalDateTime newStartDate);
+}
